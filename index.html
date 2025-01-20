@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Accountable-DST</title>
+  <title>ReSpAct</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -32,7 +32,8 @@
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <!-- <link rel="stylesheet" href="static/css/fontawesome.all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
@@ -83,7 +84,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/abs/2501.10316" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -92,20 +93,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/uiuc-conversational-ai-lab/Accountable-DST" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -114,14 +104,36 @@
                   </a>
                 </span>
 
+                <!-- Blog link -->
+                <!-- <span class="link-block">
+                  <a href="https://vardhandongre.notion.site/ReSpAct-Towards-Building-Large-Language-Model-Based-Conversational-AI-Agents-1342e61c204c8027a631e7427e570e61?pvs=4" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-book"></i>
+                  </span>
+                  <span>Blog</span>
+                </a>
+              </span> -->
+              
+              <!-- Notebook LM link -->
+              <span class="link-block">
+                <a href="https://notebooklm.google.com/notebook/5caa79d2-1bfb-46e0-8dbb-fbb997a5761a/audio" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-headphones"></i>
+                </span>
+                <span>Notebook LM</span>
+              </a>
+            </span>
+
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
@@ -132,14 +144,34 @@
   </div>
 </section>
 
+<!-- Audio Player Section -->
+<!-- <section class="section is-small">
+  <div class="container has-text-centered">
+      <h2 class="title is-4">Listen to Our Project Overview</h2>
+      <audio controls class="custom-audio-player">
+          <source src="static/audio/respact.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+  </div>
+</section> -->
+
+<!-- Audio Player Section -->
+<!-- <section style="text-align: center; padding: 20px; background-color: #f9f9f9; border-radius: 8px; max-width: 400px; margin: 0 auto;">
+  <h2 style="color: #333; margin-bottom: 1rem;">Listen to Our Project Overview</h2>
+  <audio controls style="width: 80%; max-width: 300px; margin: 10px auto;">
+    <source src="static/audio/respact.wav" type="audio/wav">
+      Your browser does not support the audio element.
+  </audio>
+</section> -->
+
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        Your video here -->
+        <!-- <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -147,130 +179,246 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent LLMs have enabled significant advancements for conversational agents. However, they are also well-known to hallucinate, i.e., they often produce responses that seem plausible but are not factually correct. On the other hand, users tend to over-rely on LLM-based AI agents; they accept the AI's suggestion even when it is wrong. Adding good friction, such as explanations or getting user confirmations, has been proposed as a mitigation in AI-supported decision-making systems. In this paper, we propose an accountability model for LLM-based task-oriented dialogue agents to address user overreliance via friction turns in cases of model uncertainty and errors associated with dialogue state tracking (DST). The accountability model is an augmented LLM with an additional accountability head, which functions as a binary classifier to predict the slots of the dialogue states. We perform our experiments with three backbone LLMs (Llama, Mistral, Gemma) on two established task-oriented datasets (MultiWOZ and Snips). Our empirical findings demonstrate that this approach not only enables reliable estimation of AI agent errors but also guides the LLM decoder in generating more accurate actions. We observe around 3% absolute improvement in joint goal accuracy by incorporating accountability heads in modern LLMs for the MultiWOZ dataset. We also show that this method enables the agent to self-correct its actions, further boosting its performance by 3%. Finally, we discuss the application of accountability modeling to prevent user overreliance by introducing friction.
+            Large language model (LLM)-based agents have been increasingly used to interact with external environments (e.g., games, APIs, etc.) and solve tasks. However, current frameworks do not enable these agents to work with users and interact with them to align on the details of their tasks and reach user-defined goals. Instead, in ambiguous situations, these agents may make decisions based on assumptions. This work introduces ReSpAct (Reason, Speak, and Act), a novel framework that synergistically combines essential skills for building task-oriented "conversational" agents. ReSpAct addresses this need for agents, expanding on the ReAct approach. The ReSpAct framework enables agents to interpret user instructions, reason about complex tasks, execute appropriate actions, and engage in dynamic dialogue to seek guidance, clarify ambiguities, understand user preferences, resolve problems, and use intermediate feedback and responses from users to update their plans.
+
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Conversational Agents: Why They Matter?</h2>
+        <div class="content has-text-justified">
+          <p>
+            In an increasingly complex digital landscape, conversational agents offer a way to bridge the gap between human needs and machine capabilities. These agents can assist us in navigating digital interfaces, support decision-making, and help accomplish goals that require contextual understanding.
+          </p>
+          <figure class="image is-inline-block" style="width: 70%;"> 
+            <img src="static/images/framework2.png" alt="MY ALT TEXT"/>
+          <p>
+            <b>Existing approaches operate in a one-sided way</b>—executing commands without checking back for clarification. This approach can lead to errors and unmet expectations, especially in cases where precise details matter. However, with conversational agents, there is an added layer of communication, creating a back-and-forth that mirrors human conversation and allows users to guide the agent toward optimal outcomes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Conversational Agents: Why They Matter?</h2>
+        <div class="content has-text-justified">
+          <p>
+            In an increasingly complex digital landscape, conversational agents offer a way to bridge the gap between human needs and machine capabilities. These agents can assist us in navigating digital interfaces, support decision-making, and help accomplish goals that require contextual understanding.
+          </p>
+          <figure class="image is-inline-block"> 
+            <img src="static/images/framework2.png" alt="MY ALT TEXT"/>
+          </figure>
+          <p>
+            <b>Existing approaches operate in a one-sided way</b>—executing commands without checking back for clarification. This approach can lead to errors and unmet expectations, especially in cases where precise details matter. However, with conversational agents, there is an added layer of communication, creating a back-and-forth that mirrors human conversation and allows users to guide the agent toward optimal outcomes.
+          </p>
+        </div>     
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Why ReSpAct?</h2>
+        <div class="content has-text-justified">
+          <p>
+            ReSpAct, or "Reason, Speak, Act," is a novel framework that builds on the ReAct approach to make interactions more human-centered. ReSpAct takes agent systems a step further by embedding conversations directly into the decision-making process, enabling agents to act autonomously while remaining responsive to user needs. For example, if an agent faces ambiguity, it can proactively ask, "Should I look for a blue sweater in the mens section, or do you have another preference?". It combines reasoning with conversational prompts to allow agents to clarify uncertainties, seek user feedback, and adapt strategies dynamically. This human-in-the-loop approach not only reduces mistakes but allows building user trust and satisfaction by keeping them engaged in real-time.
+          </p>
+          <figure class="image is-inline-block"> 
+            <img src="static/images/examples.png" alt="MY ALT TEXT"/>
+          </figure>
+          <p>
+            The ReSpAct framework empowers LLM-based Agents to execute tasks more accurately by blending autonomous reasoning with natural language interaction. When an agent is unclear on a user request, it can ask a question or share its reasoning, preventing it from acting based on assumptions. This dynamic engagement means fewer misunderstandings and more effective completion of tasks, as seen in tasks like booking accommodations or navigating e-commerce platforms.
+          </p>
+        </div>     
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div id="results-carousel" class="carousel results-carousel">
+            
+            <div class="item">
+              <img src="static/images/framework.png" alt="MY ALT TEXT"/>
+              <h2 class="subtitle has-text-centered">
+                ReSpAct framework enables agents to interpret user instructions, reason about complex tasks, execute appropriate actions, and engage in dynamic dialogue.
+              </h2>
+            </div>
+
+            <div class="item">
+              <img src="static/images/efficient_respact_v2.png" alt="MY ALT TEXT"/>
+              <h2 class="subtitle has-text-centered">
+                Comparison of (a) ReAct and (b) ReSpAct to solve a game in AlfWorld
+              </h2>
+            </div>
+
+            <div class="item">
+              <img src="static/images/multiwoz.png" alt="MY ALT TEXT"/>
+              <h2 class="subtitle has-text-centered">
+                Comparison of (a) ReAct and (b) ReSpAct to set up a travel booking in MultiWOZ 
+              </h2>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End image carousel -->
+
+ <!-- Takeaway line -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">ReSpAct synergistically combines the essential skills for building task-oriented "conversational" agents. Agent can reasong through thoughts, interact with the user, and take actions in the environment to solve tasks.</h2>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">ReSpAct Approach</h2>
+        <p>          
+          ReSpAct expands the typical action space of LLMs by adding "speak" actions, allowing agents to ask for guidance, confirm details, and receive feedback during tasks. This means that instead of assuming and potentially making errors, the agent can ask, “Is this what you had in mind?” before proceeding. This interactive loop lets agents adapt on the fly, making ReSpAct ideal for complex tasks in interactive environments.
+        </p>        
+        <div class="has-text-centered"> 
+          <figure class="image is-inline-block" style="width: 50%;"> 
+            <img src="static/images/respact-ver3.png" alt="MY ALT TEXT"/>
+          </figure>
+          <p>
+            Task-oriented conversational agents that ask questions, request feedback, and adapt their strategies based on user input.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Performance</h2>
+        <div class="content has-text-justified">
+          <p>
+            We test ReSpAct in 3 settings: AlfWorld (Embodied Decision-Making), WebShop (Web Agent Decision-Making) and MultiWOZ (Task Oriented Dialogue System). Each of these environments presents unique challenges, requiring the agent to balance reasoning, dialogue, and action in different ways. To evaluate ReSpAct effectively, we design human-annotated trajectories with sparse occurences of reasoning traces and dialogs, allowing the language model to autonomously decide when to "think," "speak," or "act." This design simulates a real-world scenario where agents must not only follow instructions but also navigate uncertainties and dynamically adapt to the users needs.
+          </p>
+        </div>   
+    <h2 class="title is-3"> 
+      AlfWorld 
+    </h2>
+    <p>
+      We evaluate ReSpAct in AlfWorld, a synthetic environment based on the TextWorld framework and aligned with the embodied ALFRED benchmark. AlfWorld presents six task categories, such as finding hidden objects, moving items, and using objects together (e.g., heating a potato in a microwave). In this setting, ReSpAct enables agents to ask contextually relevant questions, provide status updates, and seek clarification to navigate tasks more effectively. Compared to a baseline ReAct agent, which relies on internal reasoning without user feedback, ReSpAct demonstrates notable improvements. It achieves an 87.3% success rate across tasks, outperforming ReAct's 80.6% by effectively integrating dialogue into its decision-making process.
+    </p>
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/alfworld-respact.mp4"
+        type="video/mp4">
+      </video>
+      <img src="static/images/table-alfworld.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Comparison of (a) ReAct and (b) ReSpAct over Task-specific success rates (%) in Alfworld
+      </h2>
+      <figure class="image is-inline-block"> 
+        <img src="static/images/sankey.png" alt="MY ALT TEXT"/>
+      </figure>
+      <p>
+        In our analysis we observed how ReSpAct changes the way agents handle tasks. While ReAct agents tend to jump straight into actions, ReSpAct introduces more "thinking" and "speaking" moments. The ReSpAct agents show a sharp reduction in "invalid actions"—down to just 3% from ReAct's 13%. Invalid actions are wasted steps, like trying to open an already open door, that dont contribute to task success.
+      </p>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">
+      MultiWOZ
+      </h2>
+      <p>
+        We evaluate ReSpAct in a MultiWOZ environment, where the agent assists with booking hotels, restaurants, and taxis by understanding user preferences, asking clarifying questions, and making informed decisions. Compared to a ReAct baseline that operates without user feedback, ReSpAct achieves higher scores on two metrics: Inform Rate, which checks if all requested information (e.g., hotel address and price) was correctly provided, and Success Rate, which further requires that all user goals, like completing a booking, are fully met. Using GPT-4o-mini, ReSpAct scores 72.2% on Inform and 51.8% on Success, compared to the baseline 66.7% and 48.8%, respectively. 
+      </p>
+      <br>
+    <div class="hero-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <video poster="" id="tree" autoplay controls muted loop style="max-width: 100%; height: auto;">
+
+        <source src="static/videos/respact-demo-woz-2.mov" type="video/mp4">
+      </video>
+      <img src="static/images/table-woz.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Comparison of Inform and Success scores for MultiWOZ using GPT-4o-mini and Llama-405B-instruct models.
       </h2>
     </div>
   </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+</section> -->
+<!-- End teaser video -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">
+      WebShop
+    </h2>
+    <p>
+      We evaluate ReSpAct in a WebShop environment, where the agent navigates a simulated online shopping platform containing over 1.18 million real-world products to identify and purchase items based on user preferences. The agent actively searches for products matching user requirements, asks clarifying questions to refine search results, and makes informed purchasing decisions. To assess performance, we use two metrics: (1) average score, which reflects the percentage of desired attributes met by the chosen product across all episodes, and (2) success rate, which measures the percentage of episodes where the chosen product fully satisfies the users requirements. Our results show that ReSpAct achieves an average score of 32.7% and a success rate of 12% with a user simulator. With human interaction, ReSpAct reaches an 85.8% average score and 50% success rate, underscoring the critical role of interactive questioning and feedback in enhancing accuracy and user satisfaction with task-oriented web shopping agents.
+    </p>
+    <br>
+    <div class="hero-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/respact-demo-webshop.mov"
+        type="video/mp4">
+      </video>
+      <img src="static/images/table-shop.png" alt="MY ALT TEXT" style="width: 50%;"/>
+      <h2 class="subtitle has-text-centered">
+        Comparison of Score and success rate (SR) on 100 Test WebShop trajectories using GPT-4o-mini
+      </h2>
     </div>
   </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
+</section> -->
+<!-- End teaser video -->
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -280,19 +428,44 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
+
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Implications and the Future of Conversational Agents</h2>
+    <p>
+      By embedding conversational checkpoints within its reasoning process, ReSpAct addresses longstanding issues like error propagation, task ambiguity, and rigid agent behavior. In interactive environments like WebShop and AlfWorld, ReSpAct's approach not only reduces errors during task completion but also enables agents to align more closely with user intent by actively involving users in decision-making. This responsiveness transforms the agent into a collaborative partner rather than a passive tool.
+    </p>
+  </section>
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{dey2025preventingoverreliancetaskorientedconversational,
+        title={Towards Preventing Overreliance on Task-Oriented Conversational AI Through Accountability Modeling}, 
+        author={Suvodip Dey and Yi-Jyun Sun and Gokhan Tur and Dilek Hakkani-Tur},
+        year={2025},
+        eprint={2501.10316},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL},
+        url={https://arxiv.org/abs/2501.10316},
+      }
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
+<!-- Acknowledgements -->
+<section class="section" id="Acknowledgements">
+<div class="container is-max-desktop content">
+  <h2 class="title">Acknowledgements</h2>
+  <p>
+    This work was supported in part by Other Transaction award HR0011249XXX from the U.S. Defense Advanced Research Projects Agency (DARPA) Friction for Accountability in Conversational Transactions (FACT) program and has benefited from the Microsoft Accelerate Foundation Models Research (AFMR) grant program, through which leading foundation models hosted by Microsoft Azure and access to Azure credits were provided to conduct the research.
+  </p>
+</section>
 
   <footer class="footer">
   <div class="container">
@@ -301,9 +474,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This website's template is borrowed from <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. We thank the authors for open-sourcing their code.
           </p>
 
         </div>
