@@ -336,7 +336,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3">How Accountability Modeling can prevent Overreliance?</h2>
         <p>          
-          ReSpAct expands the typical action space of LLMs by adding "speak" actions, allowing agents to ask for guidance, confirm details, and receive feedback during tasks. This means that instead of assuming and potentially making errors, the agent can ask, “Is this what you had in mind?” before proceeding. This interactive loop lets agents adapt on the fly, making ReSpAct ideal for complex tasks in interactive environments.
+          Task-oriented dialogue systems (TODS) are designed to assist users in completing a task or goal through conversations. Dialogue state tracking (DST) is a crucial component of TODS that accounts for understanding the user intentions and keeping track of the dialogue state. Task-oriented dialogues are sensitive to DST errors (false positives and false negatives), as a single error can significantly change the course of the conversation. For example, in Figure 1, <i>attraction-area</i> is a false negative prediction. As a result, the user may overrely on the AI's suggestion and end up booking a park that is not near or centre of the town. Such problems deteriorate the user experience in real-world conversations.
         </p>        
         <div class="has-text-centered"> 
           <figure class="image is-inline-block" style="width: 60%"> 
@@ -344,6 +344,7 @@
             <figcaption>Figure 1: Overview of Accountability Modeling.</figcaption>
           </figure>
         </div>
+        <p>In this work, we tackle overreliance using accountability modeling of DST that can detect the dialogue state errors in advance and rectify them. For example, in Figure 1, <i>attraction-area</i> is not in the prediction, the accountability model is able to detect it and self-corrects the predicted dialogue state. Instead of self-correcting the errors, the model can also introduce such friction turns (like confirmation about model uncertainty and errors), which helps to rectify the error in subsequent turns and prevent overreliance.</p>
       </div>
     </div>
   </div>
