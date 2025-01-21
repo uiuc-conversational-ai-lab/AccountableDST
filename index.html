@@ -229,7 +229,7 @@
         <h2 class="title is-3">Overreliance on Task-Oriented Conversational AI</h2>
         <div class="content has-text-justified">
           <p>
-            In an increasingly complex digital landscape, conversational agents offer a way to bridge the gap between human needs and machine capabilities. These agents can assist us in navigating digital interfaces, support decision-making, and help accomplish goals that require contextual understanding.
+            Recent LLMs have enabled significant advancements for conversational agents. However, they are also well-known to hallucinate, i.e., they often produce responses that seem plausible but are not factually correct. On the other hand, users tend to over-rely on LLM-based AI agents; they accept the AI’s suggestion even when it is wrong. Adding good friction, such as explanations or getting user confirmations, has been proposed as a mitigation in AI-supported decision-making systems.
           </p>
           <!-- <figure class="image is-inline-block"> 
             <img src="static/images/framework2.png" alt="MY ALT TEXT"/>
@@ -250,7 +250,9 @@
         <h2 class="title is-3">How Accountability Modeling can prevent Overreliance?</h2>
         <div style="clear: both;">
           <div>
-            <p>Some more text that will appear to the left of the image. abckdldldl</p>
+            <p>This work proposes an LLM-based generative accountability modeling for task-oriented conversations. In AI, accountability typically refers to the model's capability to explain or justify its action. The main idea of our approach is to add an accountability head in backbone LLMs, which is nothing but a binary classifier for predicting the slots in the dialogue state. The classifier is added to the final token of the dialogue context. The resultant model is jointly trained on the standard language modeling loss and the auxiliary slot classification loss.
+
+            </p>
           </div>
           <div style="float: right; margin-right 1em; width: 40%;">
             <img src="static/images/motivation.png" alt="">
@@ -337,7 +339,7 @@
           ReSpAct expands the typical action space of LLMs by adding "speak" actions, allowing agents to ask for guidance, confirm details, and receive feedback during tasks. This means that instead of assuming and potentially making errors, the agent can ask, “Is this what you had in mind?” before proceeding. This interactive loop lets agents adapt on the fly, making ReSpAct ideal for complex tasks in interactive environments.
         </p>        
         <div class="has-text-centered"> 
-          <figure class="image is-inline-block"> 
+          <figure class="image is-inline-block" style="width: 80%"> 
             <img src="static/images/arc.png" alt="MY ALT TEXT"/>
           </figure>
           <p>
@@ -379,7 +381,7 @@
           ReSpAct expands the typical action space of LLMs by adding "speak" actions, allowing agents to ask for guidance, confirm details, and receive feedback during tasks. This means that instead of assuming and potentially making errors, the agent can ask, “Is this what you had in mind?” before proceeding. This interactive loop lets agents adapt on the fly, making ReSpAct ideal for complex tasks in interactive environments.
         </p>        
         <div class="has-text-centered"> 
-          <figure class="image is-inline-block"> 
+          <figure class="image is-inline-block" style="width: 80%"> 
             <img src="static/images/acc_example.png" alt="MY ALT TEXT"/>
           </figure>
         </div>
