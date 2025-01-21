@@ -378,7 +378,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Performance</h2>
         <p>          
-          ReSpAct expands the typical action space of LLMs by adding "speak" actions, allowing agents to ask for guidance, confirm details, and receive feedback during tasks. This means that instead of assuming and potentially making errors, the agent can ask, “Is this what you had in mind?” before proceeding. This interactive loop lets agents adapt on the fly, making ReSpAct ideal for complex tasks in interactive environments.
+          We perform our experiments with three backbone LLMs (Llama, Mistral, Gemma) on two established task-oriented datasets (MultiWOZ and Snips). Our empirical findings (shown in Figure 3) demonstrate that this approach not only enables reliable estimation of AI agent errors but also guides the LLM decoder in generating more accurate actions. We observe around 3% absolute improvement in joint goal accuracy by incorporating accountability heads in modern LLMs for the MultiWOZ dataset. We also show that this method enables the agent to self-correct its actions, further boosting its performance by 3%.
         </p>     
         <br>   
         <div class="has-text-centered"> 
