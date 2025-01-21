@@ -357,7 +357,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Model Architecture</h2>
         <p>          
-          ReSpAct expands the typical action space of LLMs by adding "speak" actions, allowing agents to ask for guidance, confirm details, and receive feedback during tasks. This means that instead of assuming and potentially making errors, the agent can ask, “Is this what you had in mind?” before proceeding. This interactive loop lets agents adapt on the fly, making ReSpAct ideal for complex tasks in interactive environments.
+          The main idea of our approach is to add an accountability head in backbone LLMs, which is nothing but a binary classifier for predicting the slots in the dialogue state. The classifier is added to the final token of the dialogue context. The resultant model is jointly trained on the standard language modeling loss and the auxiliary slot classification loss. The accountability head helps to estimate the slot probabilities for all the slots, which can be used to detect the false positive and false negative slots in the predicted dialogue state. Furthermore, the inclusion of the accountability head acts as an auxiliary loss that helps in the learning of dialogue state generation. 
         </p>        
         <div class="has-text-centered"> 
           <figure class="image is-inline-block" style="width: 75%"> 
