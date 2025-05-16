@@ -384,7 +384,14 @@
         <div class="has-text-centered"> 
           <figure class="image is-inline-block"> 
             <img src="static/images/amd_result.png" alt="MY ALT TEXT"/>
-            <figcaption>Figure 3: Comparison of the DST performance on the test subsets of the MultiWOZ and Snips datasets.</figcaption>
+            <figcaption>Figure 3: Comparison of the DST performance on the MultiWOZ 2.4 and Snips test datasets with different LLM backbones. The relative JGA improvement of proposed M<sub>AMD</sub> (accountability modeling) and M<sub>AMD+SC</sub> (accountability modeling with self-correction), compared to the respective M<sub>SFT</sub> (supervised finetuning) baseline, is highlighted in blue. The best results are indicated in bold font.</figcaption>
+          
+          </figure>
+        </div>
+        <div class="has-text-centered"> 
+          <figure class="image is-inline-block"> 
+            <img src="static/images/amd_result2.png" alt="MY ALT TEXT"/>
+            <figcaption>Figure 4: JGA comparison between various DST models on the MultiWOZ 2.4 test data.</figcaption>
           
           </figure>
         </div>
@@ -399,13 +406,13 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Dialogue State Correction using Accountability Modeling</h2>
         <p>          
-          Figure 4 shows illustrative examples of the model prediction from the MultiWOZ and Snips datasets. In the first example, the model detected a false positive slot (<i>restaurant-pricerange</i>) and filtered it to rectify the prediction. The second example contains a false negative slot (<i>attraction-type</i>), which is corrected successfully. In the third example, the model detects both false positive and false negative slots and successfully rectifies them. In the fourth example, the original prediction of the model is correct. However, self-correction adds an extra slot (<i>train-departure</i>), which makes the prediction wrong. The fifth one shows an instance where the algorithm partially corrects an error. The last two examples are from the Snips, where the algorithm successfully rectifies the prediction. 
+          Figure 5 shows illustrative examples of the model prediction from the MultiWOZ and Snips datasets. In the first example, the model detected a false positive slot (<i>restaurant-pricerange</i>) and filtered it to rectify the prediction. The second example contains a false negative slot (<i>attraction-type</i>), which is corrected successfully. In the third example, the model detects both false positive and false negative slots and successfully rectifies them. In the fourth example, the original prediction of the model is correct. However, self-correction adds an extra slot (<i>train-departure</i>), which makes the prediction wrong. The fifth one shows an instance where the algorithm partially corrects an error. The last two examples are from the Snips, where the algorithm successfully rectifies the prediction. 
         </p>    
         <br>    
         <div class="has-text-centered"> 
           <figure class="image is-inline-block" style="width: 90%"> 
             <img src="static/images/acc_example.png" alt="MY ALT TEXT"/>
-            <figcaption>Figure 4: Illustrative example of dialogue state corrections.</figcaption>
+            <figcaption>Figure 5: Illustrative example of dialogue state corrections.</figcaption>
            
           </figure>
         </div>
