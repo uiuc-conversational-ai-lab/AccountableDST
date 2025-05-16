@@ -359,18 +359,13 @@
         <h2 class="title is-3">Accountability Modeling for Dialogue State Tracking (AMD)</h2>
         <p>          
           The main idea of our approach is to add an accountability head in backbone LLMs, which is nothing but a binary classifier for predicting the slots in the dialogue state. The classifier is added to the final token of the dialogue context. The resultant model is jointly trained on the standard language modeling loss and the auxiliary slot classification loss. The accountability head helps to estimate the slot probabilities for all the slots, which can be used to detect the false positive and false negative slots in the predicted dialogue state. Furthermore, the inclusion of the accountability head acts as an auxiliary loss that helps in the learning of dialogue state generation. 
-        </p>        
+        </p>    
+        <p>The slot probabilities output by the classifier or the accountability head can be used to self-correct (SC) the generated dialogue state. We propose a two-step dialogue state correction algorithm. The first step of the algorithm attempts to filter the possible false positives, while the second step helps to include the possible false negatives.</p>
         <br>
         <div class="has-text-centered"> 
           <figure class="image is-inline-block" style="width: 75%"> 
             <img src="static/images/arc.png" alt="MY ALT TEXT"/>
             <figcaption>Figure 2: Model architecture of the LLM-based generative accountability modeling for DST.</figcaption>
-          </figure>
-        </div>
-        <p>The slot probabilities output by the classifier or the accountability head can be used to self-correct (SC) the generated dialogue state. Algo 1 shows the dialogue state correction algorithm. The first step of the algorithm attempts to filter the possible false positives, while the second step helps to include the possible false negatives.</p>
-        <div class="has-text-centered"> 
-          <figure class="image is-inline-block" style="width: 75%"> 
-            <img src="static/images/amd_algo.png" alt="MY ALT TEXT"/>
           </figure>
         </div>
       </div>
